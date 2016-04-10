@@ -1,0 +1,27 @@
+#include <iostream>
+
+using std::cout;
+using std::endl;
+using std::cin;
+
+int main()
+{
+	int n, m, sm;
+	cout << "Enter the number of integers to be processed: ";
+	cin >> n;
+	
+	cout << "Enter an integer: ";
+	cin >> m;
+	sm = m;
+	while(--n > 0)
+	{
+		cout << "Enter next integer: ";
+		cin >> m;
+		if(sm > m) sm = m;
+	}
+
+	cout << "The smallest integer is: " << sm << endl;
+	return 0;
+
+}
+
